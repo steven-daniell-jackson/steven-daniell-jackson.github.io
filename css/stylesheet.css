@@ -94,6 +94,10 @@ ul li{
   z-index: 1;
 }
 
+p.spacer{
+  margin: 20px;
+}
+
 #sidebar-wrapper.active {
   right: 250px;
   width: 250px;
@@ -215,10 +219,13 @@ a, a:link, a:hover, a:active{
 }
 
 a.btn-about {
+  position: relative;
+  top:40px;
   background-color: #7fbbda;
   border: 1px #7fbbda solid;
   border-radius: 5px;
-  padding: 10px 10px;
+  font-size: 20px;
+  padding: 10px 30px;
   color: #F7F7F7;
   transition: 1s ease-in-out;
 
