@@ -76,6 +76,8 @@ ul li{
   height: 55px;
   line-height: 55px;
   font-size: 18px;
+  color: #999999;
+
 }
 
 .sidebar-nav > .sidebar-brand a {
@@ -335,8 +337,6 @@ right: -200px;
 }
 
 /*Box hover states*/
-
-
 
 /*End Box hover state*/
 
