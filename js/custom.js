@@ -12,7 +12,15 @@ var attributes = ["Passionate", "Skilled", "Logical", "Responsible"
 , "Hard Working", "a Quick Learner", "Serene", "Patient", "Happy"
 ];
 
-// Global Variables end 
+var education = "Varsity College <br>Diploma — 2007/2008 <br> 2 year Diploma in IT programming (Java)<br><br>Secondary Education Awards:<br><br>ABBOTT’S COLLEGE:<br>Annual award for Computer Studies Higher Grade<br><br>";
+var education2 = "BOSMANSDAM HIGH SCHOOL: <br>Student Monitor <br>Grade 9 and 10 top achievers award in Mathematics <br>Member of the debate society <br>Member of chess society<br><br>";
+var education3 = "BOSMANSDAM PRIMARY SCHOOL: <br>Monitor – Duty was to lead the computer monitor group Responsible for upgrading of schools computers for student’s use";
+
+var contactInfo = " Email: Stevenjackson.sanguine@gmail.com </br> Contact number: 0769975180</br>Skype: Steven.jackson..";
+
+
+
+// Global Variables End 
 
 
 
@@ -45,7 +53,6 @@ $(function() {
         }
     });
     });// Animate scroll end
-
 
 
 
@@ -147,15 +154,40 @@ $('#more').addClass(' animated slideInRight');
 
 });
 // End Page scroll with Jquery events 
+ 
+// Additional information
+
+// Remove animated class
+function removeClass (){
+    setTimeout(function () { 
+    $('.content').removeClass('animated bounceInLeft');
+    $('.content').removeClass('animated slideInRight');
+}, 800);
+
+}
 
 
+//On Education click add animated class and information
+$('#education-toggle').click(function(){
 
+$('.content').html(education + education2 + education3);
+$('.content').addClass('animated bounceInLeft', removeClass());
 
-
-
-
-
-
-
+removeClass();
 
 });
+
+
+//On contact click add animated class and information
+$('#contact-toggle').click(function(){
+$('.content').html(contactInfo);
+$('.content').addClass('animated slideInRight');
+
+removeClass();
+
+});
+
+
+
+
+}); // End Document ready

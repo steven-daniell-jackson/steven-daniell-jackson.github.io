@@ -187,7 +187,7 @@ ul li{
 /* Footer */
 
 footer {
-  padding: 100px 0;
+
 }
 
 .top-scroll {
@@ -199,15 +199,15 @@ footer {
   color: inherit;
 }
 
-i.scroll {
-  color: #333333;
+.fa-arrow-circle-up {
+   font-size: 112px;
+   color: #0a5175;
+   
+   transition: all 1s ease-in-out;
 }
-
-i.scroll:hover {
-  color: #0a5175;
+.fa-arrow-circle-up:hover {
+  color: #1173A5;
 }
-
-
 
 
 a, a:link, a:hover, a:active{
@@ -220,7 +220,6 @@ a.btn-about {
   border-radius: 5px;
   padding: 10px 10px;
   color: #F7F7F7;
-
   transition: 1s ease-in-out;
 
 }
@@ -248,6 +247,21 @@ a.btn-experience:hover{
  border: 1px #7fbbda solid;
 }
 
+a.btn-work-experience {
+  background-color: #0a5175;
+  border: 1px #F7F7F7 solid;
+  border-radius: 10px;
+  padding: 15px 15px;
+  color: #F7F7F7;
+  transition: 1s ease-in-out;
+
+}
+
+a.btn-work-experience:hover{
+ background-color: #1173A5;
+ color: #fff;
+ border: 1px #7fbbda solid;
+}
 
 
 .box {
@@ -317,6 +331,8 @@ right: -200px;
 
 
 /*End Box hover state*/
+
+
 
 /* Media Queries */
 
