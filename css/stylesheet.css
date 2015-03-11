@@ -6,6 +6,10 @@ body {
   width: 100%;
 }
 
+ul li{
+  list-style:none;
+}
+
 .vert-text {
   display: table-cell;
   vertical-align: middle;
@@ -136,17 +140,6 @@ body {
   margin-bottom: 15px;
 }
 
-i.service-icon {
-  border: 3px solid #ffffff;
-  border-radius: 50%;
-  display: inline-block;
-  font-size: 56px;
-  width: 140px;
-  height: 140px;
-  line-height: 136px;
-  vertical-align: middle; 
-  text-align: center;
-}
 
 /* Callout */
 
@@ -213,20 +206,9 @@ i.scroll {
 i.scroll:hover {
   color: #0a5175;
 }
-/* Responsive */
 
-@media (max-width: 768px) {
-	
-  .header {
-	background: url(../img/bg.jpg) no-repeat center center scroll; 
-  }
 
-  .callout {
-	background: url(../img/callout.jpg) no-repeat center center scroll; 
-  }
 
-  
-}
 
 a, a:link, a:hover, a:active{
   text-decoration: none;
@@ -250,21 +232,69 @@ a.btn-about:hover{
 }
 
 
+a.btn-experience {
+  background-color: #7fbbda;
+  border: 1px #F7F7F7 solid;
+  border-radius: 5px;
+  padding: 10px 10px;
+  color: #F7F7F7;
+  transition: 1s ease-in-out;
+
+}
+
+a.btn-experience:hover{
+ background-color: #ECECEC;
+ color: #7fbbda;
+ border: 1px #7fbbda solid;
+}
+
+
 
 .box {
+  position:relative;
   height: 200px;
   width: 200px;
   /*border:1px #fff solid;*/
 }
 
-.box#js {
-  background: url('../img/javascript.png') no-repeat;
-}
+/*First set*/
 .box#jq {
   background: url('../img/JQuery.png') no-repeat;
+  opacity: 0;
+left: -400px;
+
 }
 .box#css {
   background: url('../img/html-css.png') no-repeat;
+  opacity: 0;
+top: -550px;
+;
+}
+.box#js {
+  background: url('../img/javascript.png') no-repeat;
+  opacity: 0;
+bottom: -1000px;
+  
+
+}
+.box#php {
+  background: url('../img/PHP.png') no-repeat;
+  opacity: 0;
+right: -200px;
+
+}
+/*End*/
+
+
+.box#jq:hover {
+  opacity: 1;
+  width:200px;
+}
+
+
+/*Second set*/
+.box#mysql {
+  background: url('../img/mysql.png') no-repeat;
 }
 .box#bootstrap {
   background: url('../img/Bootstrap.png') no-repeat;
@@ -275,9 +305,31 @@ a.btn-about:hover{
 .box#more {
   background: url('../img/javascript.png') no-repeat;
 }
-.box#php {
-  background: url('../img/PHP.png') no-repeat;
+
+/*End*/
+
+.lead > .text-rotate {
+
 }
-.box#mysql {
-  background: url('../img/mysql.png') no-repeat;
+
+/*Box hover states*/
+
+
+
+/*End Box hover state*/
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+	
+  .header {
+	background: url(../img/bg.jpg) no-repeat center center scroll; 
+  }
+
+  .callout {
+	background: url(../img/callout.jpg) no-repeat center center scroll; 
+  }
+
 }
+
+
