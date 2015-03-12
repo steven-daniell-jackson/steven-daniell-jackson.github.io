@@ -3,8 +3,11 @@
 
 /* Global Styles */
 
-h1,h2,h3,h4,h5{
+h1,h2,h3{
    font-family: 'Lobster', cursive;
+}
+h4,h5{
+   font-family: 'Gloria Hallelujah', cursive;
 }
 html,
 body {
@@ -31,6 +34,11 @@ text-align: center;
   font-weight: 700;
   font-family: 'Gloria Hallelujah', cursive;
 }
+
+.btn-primary {
+  background-color: #0a5175;
+}
+
 
 /* Side Menu */
 
@@ -171,19 +179,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', end
 }
 
 
-/* Callout */
-
-.callout {
-  color: #ffffff;
-  display: table;
-  height: 400px;
-  width: 100%;
-  background: url(../img/callout.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 
 /* Portfolio */
 
