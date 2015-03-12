@@ -355,7 +355,26 @@ right: -200px;
 
 /*End Box hover state*/
 
+/*About me*/
+#about p {
+  line-height: 1.5em;
+}
 
+
+p#about-me {
+  opacity: 0;
+}
+
+#hobbies{
+   opacity: 0;
+}
+#objective{
+   opacity: 0;
+}
+.lead{
+   opacity: 0;
+}
+/*end*/
 
 /* Media Queries */
 
@@ -364,9 +383,5 @@ right: -200px;
   .header {
   }
 
-
 }
 
-p#about-me {
-  opacity: 0;
-}

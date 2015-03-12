@@ -100,6 +100,9 @@ $(window).scroll(function(event) {
 
 if(y >=400 && y <=700) {
 $('#about-me').css( "opacity", "1" ).addClass(' animated bounceInLeft');
+$('#hobbies').css( "opacity", "1" ).addClass(' animated bounceInRight');
+$('#objective').css( "opacity", "1" ).addClass(' animated rubberBand');
+$('.lead').css( "opacity", "1" ).addClass(' animated fadeInDown');
 
 } else if (y >=800 && y <=900) { // Scroll position
 
@@ -160,7 +163,7 @@ $('#more').css( "opacity", "1" ).addClass(' animated slideInRight');
 function removeClass (){
     setTimeout(function () { 
     $('.content').removeClass('animated bounceInLeft');
-    $('.content').removeClass('animated bounceInRight');
+    $('.content').removeClass('animated slideInRight');
 }, 800);
 
 }
