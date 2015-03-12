@@ -240,7 +240,7 @@ a, a:link, a:hover, a:active{
 a.btn-about {
   position: relative;
   top:40px;
-  background-color: #7fbbda;
+ background-color: #7FBBDA;
   border: 1px #7fbbda solid;
   border-radius: 5px;
   font-size: 20px;
@@ -251,8 +251,8 @@ a.btn-about {
 }
 
 a.btn-about:hover{
- background-color: #ECECEC;
- color: #000;
+ background-color: #0B89CA;
+ color: #F7F7F7;
  border: 1px #7fbbda solid;
 }
 
@@ -261,15 +261,15 @@ a.btn-experience {
   background-color: #7FBBDA;
   border: 1px #F7F7F7 solid;
   border-radius: 5px;
-  padding: 10px 10px;
+  padding: 15px 15px;
   color: #F7F7F7;
   transition: 1s ease-in-out;
 
 }
 
 a.btn-experience:hover{
- background-color: #ECECEC;
- color: #7fbbda;
+ background-color: #0B89CA;
+ color: #F7F7F7;
  border: 1px #7fbbda solid;
 }
 
@@ -277,7 +277,7 @@ a.btn-work-experience {
   background-color: #7FBBDA;
   border: 1px #F7F7F7 solid;
   border-radius: 5px;
-  padding: 10px 10px;
+  padding: 15px 15px;
   color: #F7F7F7;
   transition: 1s ease-in-out;
 
@@ -285,8 +285,8 @@ a.btn-work-experience {
 }
 
 a.btn-work-experience:hover{
- background-color: #ECECEC;
- color: #7fbbda;
+ background-color: #0B89CA;
+ color: #F7F7F7;
  border: 1px #7fbbda solid;
 }
 
