@@ -9,7 +9,7 @@ var j = 0;
 //My attributes array
 var attributes = ["Passionate", "Skilled", "Logical", "Responsible"
 , "Honest ", "Reliable", "Attentive", "Adaptive", "Persistent"
-, "Hard Working", "a Quick Learner", "Serene", "Patient", "Happy"
+, "a Quick Learner", "Serene", "Patient", "Happy"
 ];
 
 var education = "Varsity College <br>Diploma — 2007/2008 <br> 2 year Diploma in IT programming (Java)<br><br>Secondary Education Awards:<br><br>ABBOTT’S COLLEGE:<br>Annual award for Computer Studies Higher Grade<br><br>";
