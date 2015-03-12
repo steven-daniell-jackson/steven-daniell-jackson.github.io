@@ -33,10 +33,6 @@ ul li{
   font-family: 'Gloria Hallelujah', cursive;
 }
 
-.btn-primary {
-  background-color: #0a5175;
-}
-
 
 /* Side Menu */
 
@@ -95,6 +91,15 @@ ul li{
   font-size: 18px;
   color: #fff;
   font-family: 'Lobster', cursive;
+
+}
+
+#sidebar-wrapper img {
+  position: relative;
+  left: 57%;
+top: 3%;
+  height: 25px;
+  width: 25px;
 
 }
 
@@ -285,10 +290,29 @@ a.btn-work-experience {
 }
 
 a.btn-work-experience:hover{
- background-color: #0B89CA;
+ background-color: #0a5175;
  color: #F7F7F7;
  border: 1px #7fbbda solid;
 }
+#menu-toggle.btn-primary{
+   padding: 10px 15px;
+}
+
+.btn-primary {
+  background-color: #0a5175;
+  border: 1px #F7F7F7 solid;
+  border-radius: 5px;
+  padding: 15px 15px;
+  color: #F7F7F7;
+  transition: 1s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #0B89CA;
+ color: #F7F7F7;
+ border: 1px #7fbbda solid;
+}
+
 
 
 .box {
@@ -375,6 +399,8 @@ p#about-me {
    opacity: 0;
 }
 /*end*/
+
+
 
 /* Media Queries */
 
