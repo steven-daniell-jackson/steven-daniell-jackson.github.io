@@ -373,6 +373,6 @@ right: -200px;
 
 }
 
-p.about-me {
+p#about-me {
   opacity: 0;
 }
