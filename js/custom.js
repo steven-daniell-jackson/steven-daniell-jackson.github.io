@@ -98,9 +98,10 @@ setInterval ();
 $(window).scroll(function(event) {
  var y = $(this).scrollTop();
 
+if(y >=400 && y <=700) {
+$('#about-me').css( "opacity", "1" ).addClass(' animated bounceInLeft');
 
-if (y >=700) { // Scroll position
-
+} else if (y >=800 && y <=900) { // Scroll position
 
 window.setTimeout(function() { //Timeout set for animate scroll
  
@@ -138,18 +139,16 @@ $('.box#php').animate({
 
     });
 
+$('#mysql').css( "opacity", "1" ).addClass(' animated bounceInLeft');
+$('#bootstrap').addClass(' animated lightSpeedIn');
+$('#wordpress').addClass(' animated rollIn');
+$('#more').css( "opacity", "1" ).addClass(' animated slideInRight');
 
 
 
 }, 1000); //End Timeout
 } //End if
-else if (y >600  && y <1000){
-$('#mysql').addClass(' animated bounceInLeft');
-$('#bootstrap').addClass(' animated lightSpeedIn');
-$('#wordpress').addClass(' animated rollIn');
-$('#more').addClass(' animated slideInRight');
 
-} // End else if
 
 
 });

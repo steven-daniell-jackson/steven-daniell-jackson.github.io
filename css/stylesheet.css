@@ -18,8 +18,10 @@ ul li{
 
 .vert-text {
   display: table-cell;
-  vertical-align: middle;
-  text-align: center;
+position: relative;
+vertical-align: top;
+top: 10%;
+text-align: center;
 }
 
 .vert-text h1 {
@@ -27,6 +29,7 @@ ul li{
   margin: 0;
   font-size: 4.5em;
   font-weight: 700;
+  font-family: 'Gloria Hallelujah', cursive;
 }
 
 /* Side Menu */
@@ -283,32 +286,29 @@ a.btn-work-experience:hover{
   position:relative;
   height: 200px;
   width: 200px;
+  opacity: 0;
   /*border:1px #fff solid;*/
 }
 
 /*First set*/
 .box#jq {
   background: url('../img/JQuery.png') no-repeat;
-  opacity: 0;
 left: -400px;
 
 }
 .box#css {
   background: url('../img/html-css.png') no-repeat;
-  opacity: 0;
 top: -550px;
 ;
 }
 .box#js {
   background: url('../img/javascript.png') no-repeat;
-  opacity: 0;
 bottom: -1000px;
   
 
 }
 .box#php {
   background: url('../img/PHP.png') no-repeat;
-  opacity: 0;
 right: -200px;
 
 }
@@ -362,4 +362,6 @@ right: -200px;
 
 }
 
-
+p.about-me {
+  opacity: 0;
+}
