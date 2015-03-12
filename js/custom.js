@@ -12,8 +12,8 @@ var attributes = ["Passionate", "Skilled", "Logical", "Responsible"
 , "a Quick Learner", "Serene", "Patient", "Happy"
 ];
 
-var education = "<h4>Varsity College</h4>Diploma — 2007/2008 <br> 2 year Diploma in IT programming (Java)<br><br><h4>Secondary Education Awards:</h4><br><h4>ABBOTT’S COLLEGE:</h4>Annual award for Computer Studies Higher Grade<br><br>";
-var education2 = "<h4>BOSMANSDAM HIGH SCHOOL:</h4> <br>Student Monitor <br>Grade 9 and 10 top achievers award in Mathematics <br>Member of the debate society <br>Member of chess society<br><br>";
+var education = "<h4>Varsity College</h4>Diploma — 2007/2008 <br> 2 year Diploma in IT programming (Java)<br><br><h4>ABBOTT’S COLLEGE:</h4>Annual award for Computer Studies Higher Grade<br><br>";
+var education2 = "<h4>BOSMANSDAM HIGH SCHOOL:</h4>Student Monitor <br>Grade 9 and 10 top achievers award in Mathematics <br>Member of the debate society <br>Member of chess society<br><br>";
 var education3 = "<h4>BOSMANSDAM PRIMARY SCHOOL: </h4>Monitor – Duty was to lead the computer monitor group Responsible for upgrading of schools computers for student’s use";
 
 var contactInfo = " <h4>Email:</h4> Stevenjackson.sanguine@gmail.com </br></br>  <h4>Contact number:</h4> 0769975180</br></br> <h4>Skype: </h4>Steven.jackson..";
@@ -180,7 +180,7 @@ removeClass();
 //On contact click add animated class and information
 $('#contact-toggle').click(function(){
 $('.content').html(contactInfo);
-$('.content').addClass('animated slideInRight');
+$('.content').addClass('animated bounceInRight');
 
 removeClass();
 
