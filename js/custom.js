@@ -160,7 +160,7 @@ $('#more').css( "opacity", "1" ).addClass(' animated slideInRight');
 function removeClass (){
     setTimeout(function () { 
     $('.content').removeClass('animated bounceInLeft');
-    $('.content').removeClass('animated slideInRight');
+    $('.content').removeClass('animated bounceInRight');
 }, 800);
 
 }
