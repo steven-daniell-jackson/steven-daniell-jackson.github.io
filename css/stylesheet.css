@@ -18,6 +18,9 @@ body {
 ul li{
   list-style:none;
 }
+.row {
+	margin-right: 0px;
+}
 
 .vert-text {
  display: table-cell;
@@ -256,7 +259,7 @@ a.btn-about {
 }
 
 a.btn-about:hover{
- background-color: #0B89CA;
+  background-color: #0a5175;
  color: #F7F7F7;
  border: 1px #7fbbda solid;
 }
@@ -290,10 +293,28 @@ a.btn-work-experience {
 }
 
 a.btn-work-experience:hover{
- background-color: #0B89CA;
+  background-color: #0a5175;
  color: #F7F7F7;
  border: 1px #7fbbda solid;
 }
+
+a.btn-more-info {
+  background-color: #7FBBDA;
+  border: 1px #F7F7F7 solid;
+  border-radius: 5px;
+  padding: 15px 15px;
+  color: #F7F7F7;
+  transition: 1s ease-in-out;
+
+
+}
+
+a.btn-more-info:hover{
+  background-color: #0a5175;
+ color: #F7F7F7;
+ border: 1px #7fbbda solid;
+}
+
 #menu-toggle.btn-primary{
    padding: 10px 15px;
 }
