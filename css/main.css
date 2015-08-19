@@ -7,7 +7,7 @@
 
 
 body {background-color: #0d0d0d; padding:0px; font-family: 'Open Sans', sans-serif;}
-
+a {cursor: pointer;}
 hr {max-width: 980px;background-color: #fff; margin:0px auto; padding: 0px;}
 h1 {font-size: 50px; font-weight: bold;}
 h2 {font-style: italic;}
@@ -34,17 +34,49 @@ h2 {font-style: italic;}
 
 div.main-header {font-size: 50px;}
 div.main-header span.sub-header {font-size: 20px;font-style: italic;}
-
+div.contact-details-top {}
 /*Header End*/
 
 
 /*Section - About Me*/
 
-section.container.about-me {background-color: #e8e8e8; }
-section.container.more-about-me {background-color: #efefef;}
+section.container.about-me {background-color: #191919; color:#fff; }
 
+section.container.about-me:after {
+	position: absolute;
+    top: 61%;
+    left: 49%;
+    margin-left: 0%;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: solid 30px #191919;
+    border-left: solid 30px transparent;
+    border-right: solid 30px transparent;
+ }
+
+
+div.row.know-more {padding: 30px 20px;}
+
+
+a[data-about-me="more"] {
+	padding: 10px 20px;
+	border: 1px solid #fff;
+	color: #fff;
+}
+
+a[data-about-me="more"] {
+	padding: 10px 20px;
+	border: 1px solid #fff;
+	color: #fff;
+}
 
 /*Section - About Me End*/
+
+
+
+
+
 
 
 div.experience-sidebar {border-right: 1px #c3c3c3 solid}
@@ -79,9 +111,9 @@ div.experience-sidebar {border-right: 1px #c3c3c3 solid}
 
 
 /*Interactive CSS*/
-/*section.more-about-me {display: none;}*/
+section.more-about-me {display: none;}
 div.row.history {display: none;}
-/*div.languages.languages-used {display: none;}*/
+div.languages.languages-used {display: none;}
 div.languages.languages-familiar {display: none;}
 div.languages.languages-interest {display: none;}
 div.platforms.cms-used {display: none;}
