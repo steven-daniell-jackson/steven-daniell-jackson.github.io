@@ -1,12 +1,85 @@
 /* ==========================================================================
    Steven Jackson custom styles
    ========================================================================== */
- .container {
+
+/*Global CSS*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+
+body {background-color: #0d0d0d; padding:0px; font-family: 'Open Sans', sans-serif;}
+
+hr {max-width: 980px;background-color: #fff; margin:0px auto; padding: 0px;}
+h1 {font-size: 50px; font-weight: bold;}
+h2 {font-style: italic;}
+
+/*Global CSS End */
+
+
+/*Styles*/
+
+.container {
     max-width: 980px;
+    background-color: #fff;
+    padding: 20px 30px;
+}
+
+.container header{
+    max-width: 980px;
+    background-color: #fff;
 }
 
 
-section.more-about-me {display: none;}
+
+/*Header*/
+
+div.main-header {font-size: 50px;}
+div.main-header span.sub-header {font-size: 20px;font-style: italic;}
+
+/*Header End*/
+
+
+/*Section - About Me*/
+
+section.container.about-me {background-color: #e8e8e8; }
+section.container.more-about-me {background-color: #efefef;}
+
+
+/*Section - About Me End*/
+
+
+div.experience-sidebar {border-right: 1px #c3c3c3 solid}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Styles*/
+
+
+/*Media Queries*/
+
+@media (min-width: ) {
+	
+}
+
+
+/*Media Queries End*/
+
+
+
+
+
+/*Interactive CSS*/
+/*section.more-about-me {display: none;}*/
 div.row.history {display: none;}
 /*div.languages.languages-used {display: none;}*/
 div.languages.languages-familiar {display: none;}
@@ -16,6 +89,6 @@ div.platforms.cms-worked-with {display: none;}
 div.frameworks.frameworks-used {display: none;}
 div.frameworks.frameworks-familiar {display: none;}
 div.frameworks.frameworks-learn {display: none;}
+/*Interactive CSS End*/
 
-div.experience-sidebar {border-right: 1px #c3c3c3 solid}
 
