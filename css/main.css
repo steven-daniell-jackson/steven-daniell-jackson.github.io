@@ -6,17 +6,11 @@
 }
 
 
- section.more-about-me {
- 	display: none;
- }
-
-
-
-
-
-
-
-
+section.more-about-me {display: none;}
+div.row.history {display: none;}
+div.languages.languages-used {display: none;}
+div.languages.languages-familiar {display: none;}
+div.languages.languages-interest {display: none;}
 
 
 
