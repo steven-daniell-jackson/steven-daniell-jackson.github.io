@@ -97,6 +97,123 @@ END EVEMT LISTENER - SKILLS MATRIX
 **************************************************************************/ 
 
 
+/**************************************************************************
+
+EVEMT LISTENER - PROFILE LINKS
+
+**************************************************************************/ 
+
+$('section.container.profile-links .panel .panel-body').on('click', function(event) {
+
+// Variable Declaration and assignment
+var elementDataValue = $(this).data("trigger");
+
+
+var linkedin = 'My <a href="https://za.linkedin.com/pub/steven-jackson/b3/978/199" target="_blank">Linkedin</a> Profile';
+var github = 'My <a href="https://github.com/steven-daniell-jackson/" target="_blank">Github</a> Profile';
+var googleDocs = 'Google Drive Document containing Work Done, Portfolio of Websites worked on, Skills Matrix and Responsibilies. <br>';
+var googleDocsLink = '<a href="https://docs.google.com/spreadsheets/d/1s7Or_0nZ1YYS3KibGAVgGdPnjmqB6iYWQPnXvEVpUmw/edit?usp=sharing" target="_blank">View Google Drive Document</a>'
+var portfolioContent = 'Due to the amount of Screenshots. <br> This has been moved<br> <a href="#">View Screenshot Portfolio</a>';
+
+$('div.profile-link-information').css("opacity","1");
+
+
+switch(elementDataValue) {
+    case "porfolio":
+       $('div.profile-link-information').html(portfolioContent).fadeIn('slow', function() {});
+        break;
+   case "linkedin":
+       $('div.profile-link-information').html(linkedin).fadeIn('slow', function() {});
+        break;
+        case "google-docs":
+       $('div.profile-link-information').html(googleDocs + googleDocsLink).fadeIn('slow', function() {});
+        break;
+        case "github":
+       $('div.profile-link-information').html(github).fadeIn('slow', function() {});
+        break;
+}
+
+});
+
+/**************************************************************************
+
+END EVEMT LISTENER - PROFILE LINKS
+
+**************************************************************************/ 
+
+
+/**************************************************************************
+
+EVEMT LISTENER - EMPLOYMENT ARROW
+
+**************************************************************************/ 
+
+$('div.container.arrow-employment-history span').on('click', function(event) {
+var findActive = '';
+var findActive = $('.employment').find('.active');
+console.log(findActive);
+
+
+if (findActive.length) {
+
+	
+resetEmployment() 
+
+	$(this).css({
+	"margin-left": '12px',
+	"-moz-transform": 'rotate(360deg)',
+	"-webkit-transform": 'rotate(360deg)',
+	"transform": 'rotate(360deg)',
+	"left":"46%"
+});
+	
+} else {
+	animateEmployment(this)
+console.log(1);
+	$(this).css({
+	"margin-left": '10px',
+	"-moz-transform": 'rotate(-450deg)',
+	"-webkit-transform": 'rotate(-450deg)',
+	"transform": 'rotate(-450deg)',
+	"left":"18%"
+});
+}
+
+
+
+
+
+
+
+});
+
+
+
+function animateEmployment() {
+
+$('.currentJob').slideUp("slow");
+$('#employmentContent').html('<span class="help">HELP!</span> <br><br>Click the arrow again to return it to normal');
+$('div.row.current').removeClass('text-center').removeClass('col-md-12').addClass('col-md-offset-1').addClass('col-md-6').addClass('active');
+$('div.row.history').fadeIn('slow', function() {});
+
+
+}
+
+function resetEmployment() {
+
+$('.currentJob').slideDown("slow");
+$('#employmentContent').html('Click the arrow to find out!');
+$('div.row.current').addClass('text-center').addClass('col-md-12').removeClass('col-md-offset-1').removeClass('col-md-6').removeClass('active');
+$('div.row.history').hide();
+
+}
+
+
+/**************************************************************************
+
+END EVEMT LISTENER - EMPLOYMENT ARROW
+
+**************************************************************************/ 
 
 
 }); //Document Ready

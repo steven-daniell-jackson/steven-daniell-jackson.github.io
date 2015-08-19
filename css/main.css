@@ -17,9 +17,12 @@
    	transition: all .50s ease-in;
    }
 
+
    a:hover {cursor: pointer; color: #FF3333;text-decoration: none;}
+
+
    hr {max-width: 980px;background-color: #fff; margin:0px auto; padding: 0px;}
-   h1 {font-size: 50px; font-weight: bold;}
+   h1 {font-size: 50px; font-weight: bold; margin-bottom: 20px;}
    h2 {font-style: italic;}
    ul {list-style: none;padding: 0px; cursor: pointer; }
    ul li {padding: 5px 0px;}
@@ -133,7 +136,27 @@
  section.container.profile-links {background-color: #191919; color:#fff;}
  section.container.profile-links h1{padding-bottom:20px;}
  section.container.profile-links .panel{background-color: #191919; color:#fff; padding: 0px;}
- section.container.profile-links .panel .panel-body{background-color: #191919; color:#fff; border: 1px solid #fff; margin: 0px 10px;}
+ section.container.profile-links .panel .panel-body{
+ 	-webkit-transition: all .50s ease;
+ 	   -moz-transition: all .50s ease;
+ 	    -ms-transition: all .50s ease;
+ 	     -o-transition: all .50s ease;
+ 	        transition: all .50s ease;
+ 	background-color: #191919; 
+ 	opacity: 1;
+	color:#fff; 
+	border: 1px solid #fff; 
+	margin: 0px 10px;
+	cursor: pointer;
+}
+
+ section.container.profile-links .panel .panel-body:hover{
+
+background-color: #fff; 
+color:#000; 
+
+}
+ 
 section.container.profile-links .panel .panel-body i{ font-size: 30px;}
 
 
@@ -143,9 +166,65 @@ section.container.profile-links .panel .panel-body i{ font-size: 30px;}
 /*End Section - Profile Links*/
 
 
+/*Employment Hist*/
+
+a.employment-history-responsibilities {
+margin-top: 2%;
+-webkit-transition: all .50s ease-out;
+   	-moz-transition: all .50s ease-out;
+   	-ms-transition: all .50s ease-out;
+   	-o-transition: all .50s ease-out;
+   	transition: all .50s ease-out;
+   	padding: 10px 20px;
+   	border: 1px solid #000;
+   	color: #000;
+}
+
+a.employment-history-responsibilities:hover{color: #fff;background-color: #000;}
+span.help {font-size: 30px; color: #CC2929;}
+
+/**/
+
+/*Footer*/
+ footer.container {background-color: #191919; color:#fff;}
+
+div.container.arrow-employment-history {padding: 10px 0px; border: 0px;}
 
 
 
+   .arrow-employment {
+   	position: relative;
+   	top: 0px;
+   	left: 46%;
+  display: inline-block;
+  width: 4em;
+  height: 4em;
+  border: 0.5em solid #333;
+  border-radius: 50%;
+  margin-left: 0.75em;
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+       -o-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+.arrow-employment:after {
+  content: '';
+	display: inline-block;
+  margin-top: 0.6em;
+  margin-left: 10px;
+  width: 1.4em;
+  height: 1.4em;
+  border-top: 0.5em solid #333;
+  border-right: 0.5em solid #333;
+  -moz-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+
+/*Footer End*/
 
 
    /*Styles*/
@@ -174,6 +253,13 @@ section.container.profile-links .panel .panel-body i{ font-size: 30px;}
    div.frameworks.frameworks-used {display: none;}
    div.frameworks.frameworks-familiar {display: none;}
    div.frameworks.frameworks-learn {display: none;}
+   div.profile-link-information {opacity: 0;
+    -webkit-transition: all .25s ease-in;
+      -moz-transition: all .25s ease-in;
+       -ms-transition: all .25s ease-in;
+        -o-transition: all .25s ease-in;
+           transition: all .25s ease-in;
+       }
    /*Interactive CSS End*/
 
 

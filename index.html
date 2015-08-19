@@ -532,26 +532,24 @@ No Design
  <div class="row col-md-12">
   <div class="panel panel-default col-md-3 text-center">
 
-  <a href="https://za.linkedin.com/pub/steven-jackson/b3/978/199" target="_blank">
-    <div class="panel-body">
+  
+    <div class="panel-body" data-trigger="linkedin">
       <i class="fa fa-linkedin-square"></i><br>
       LinkedIn
     </div>
   </div>
-  </a>
 
   <div class="panel panel-default col-md-3 text-center">
-  <a href="https://github.com/steven-daniell-jackson/" target="_blank">
-    <div class="panel-body">
+
+    <div class="panel-body" data-trigger="github">
       <i class="fa fa-github-square"></i><br>
       Github
     </div>
   </div>
-  </a>
 
   <div class="panel panel-default col-md-3 text-center">
-  <a href="https://docs.google.com/spreadsheets/d/1s7Or_0nZ1YYS3KibGAVgGdPnjmqB6iYWQPnXvEVpUmw/edit?usp=sharing" target="_blank">
-    <div class="panel-body">
+ 
+    <div class="panel-body" data-trigger="google-docs">
      <i class="fa fa-google"></i> <i class="fa fa-hdd-o"></i><br>
      Google Drive
    </div>
@@ -559,15 +557,21 @@ No Design
 </a>
 
  <div class="panel panel-default col-md-3 text-center">
-  <div class="panel-body">
+  <div class="panel-body" data-trigger="porfolio">
   <i class="fa fa-picture-o"></i><br>
     Screenshot Portfolio
   </div>
 </div>
 
 </div>
+<div class="row col-md-12 text-center profile-link-information">
+
+</div>
+
 </section>
-<hr>
+
+
+
 <!-- End Profile Links -->
 
 
@@ -584,21 +588,23 @@ No Design
  </h1>
 
  <!-- Current -->
- <div class="row text-center">
+ <div class="row text-center col-md-12 current">
+ <div class="currentJob">
   <h3 class="">What am I doing now?</h3>
   Freelancing <br>
   Studying <br>
-  Coding Projects<br>
+  Coding Projects<br><br>
+</div>
 
   <h3 class="">Where have I been?</h3>
+  <span id="employmentContent">Click the arrow to find out!</span>
 </div>
 <!-- Current End-->
 
 <!-- Past -->
 <div class="row history">
-  <h3 class="text-center">Employment History</h3>
-  <div class="col-md-6">
-
+  <div class="col-md-4">
+<br>
     <h4><a href="http://www.roidigital.co.za/">ROI Digital</a></h4>
 
     Junior Developer, ROI Digital <br>
@@ -608,28 +614,17 @@ No Design
 
     Responsibilities: Senior Developer and I.T Manager<br>
 
-    Due to the nature of my responsibilities at ROI Digital, this has been segmented. <br><br>
+    Due to the nature of my responsibilities at ROI Digital, this has been segmented. <br><br><br>
 
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+    <a class="employment-history-responsibilities" data-toggle="modal" data-target="#myModal">
       View Responsibilities
-    </button>
+    </a>
   </div>
 
-  <div class="col-md-4 pull-right">
-    <h4><a href="http://www.roidigital.co.za/">ROI Digital Details</a></h4>
-    Telephone: +27 (0) 86 176 4669 <br>
-    Address: Harrington House, <br>
-    Unit 401, 4th Floor, <br>
-    Cnr. Barrack Street + Harrington Street, <br>
-    Cape Town
-
-
-
-  </div>
 
   <!-- ROI Digital Modal -->
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="Responsibilities">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -703,7 +698,13 @@ No Design
 <!-- Past End -->
 
 </section>
-<hr>
+
+ <div class="container arrow-employment-history">
+
+ <a data-trigger="employment-arrow">
+           <span class="arrow-employment"></span>
+         </div>
+</a>
 <!-- Employment History End -->
 
 
