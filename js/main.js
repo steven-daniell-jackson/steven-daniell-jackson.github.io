@@ -55,64 +55,40 @@ $('li').on('click', function(event) {
 
 // Variable Declaration and assignment
 var parentElementID = $(this).parent().attr("id");
-	parentElementID = parentElementID.replace("#","");
-
 var elementDataValue = $(this).data("trigger");
 
+// Strip # from ID
+parentElementID = parentElementID.replace("#","");
 
 
 // Remove Active Class Function
 removeActiveClass()
 
-// Add Active Class to new Element
+// Add Active Class to Trigger Element
 $(this).addClass('active');
 
-// Pass Value to function
+// Pass Trigger Values to transition function
 experienceImageTransition(parentElementID, elementDataValue)
-
 
 });
 
 // Remove Active Class Function
 function removeActiveClass(){
 	
-	// Find and Remove previous Active class from elements
+// Find and Remove previous Active class from elements
 $('.experience-sidebar').find('li.active').removeClass('active')
 $('.skills-image-block').find('div.active').removeClass('active').hide();
 }
 
 
-
+// Trigger function
 function experienceImageTransition(parentID, elementDataValue) {
 
-
+// Element targeted based on the Trigger data- atrribute and Parent Elements ID
 $('.'+ parentID + "-" + elementDataValue +'').fadeIn('300', function() {}).addClass('active');
-console.log(parentID + " "+ elementDataValue);
 
-
-
-// 	switch(parentElementID) {
-//     case "languages":
-//         console.log(parentElementID);
-//         break;
-//     case "cms":
-//         console.log(parentElementID);
-//         break;
-//         case "frameworks":
-//         console.log(parentElementID);
-//         break;
-//         case "tools":
-//         console.log(parentElementID);
-//         break;
-//     default:
-//        "Error! How did you even do this?"
-// }
 
 }
-
-
-
-
 
 /**************************************************************************
 

@@ -48,7 +48,14 @@
    	background-color: #fff;
    }
 
-
+ .panel {
+   	margin-bottom: 20px;
+   	background-color: #fff;
+   	border: 0px solid transparent; 
+   	border-radius: 4px;
+   	-webkit-box-shadow: 0 0px 0px rgba(0,0,0,.05); 
+   	box-shadow: 0 0px 0px rgba(0,0,0,.05); 
+   }
 
    /*Header*/
 
@@ -117,22 +124,23 @@
 
    div.experience-sidebar {border-right: 1px #c3c3c3 solid}
    div.experience-sidebar h4 {margin: 15px 0px; font-weight: bold}
-   div.experience-sidebar ul > li:last-child{padding-bottom: 10px;}; 
-   div.panel {margin: 20px !important; box-shadow: 10px 9px 10px #000 !important;}
-
-
-   .panel {
-   	margin-bottom: 20px;
-   	background-color: #fff;
-   	border: 0px solid transparent; 
-   	border-radius: 4px;
-   	-webkit-box-shadow: 0 0px 0px rgba(0,0,0,.05); 
-   	box-shadow: 0 0px 0px rgba(0,0,0,.05); 
-   }
-
+   div.experience-sidebar ul > li:last-child{padding-bottom: 10px;}
 
    /* End Section - Skills Matrix*/
 
+
+/*Section - Profile Links*/
+ section.container.profile-links {background-color: #191919; color:#fff;}
+ section.container.profile-links h1{padding-bottom:20px;}
+ section.container.profile-links .panel{background-color: #191919; color:#fff; padding: 0px;}
+ section.container.profile-links .panel .panel-body{background-color: #191919; color:#fff; border: 1px solid #fff; margin: 0px 10px;}
+section.container.profile-links .panel .panel-body i{ font-size: 30px;}
+
+
+
+
+
+/*End Section - Profile Links*/
 
 
 
@@ -159,7 +167,6 @@
    /*Interactive CSS*/
    section.more-about-me {display: none;}
    div.row.history {display: none;}
-   /*div.languages.languages-used {display: none;}*/
    div.languages.languages-familiar {display: none;}
    div.languages.languages-learn {display: none;}
    div.platforms.cms-used {display: none;}
