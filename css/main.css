@@ -8,14 +8,14 @@
 
 section.more-about-me {display: none;}
 div.row.history {display: none;}
-div.languages.languages-used {display: none;}
+/*div.languages.languages-used {display: none;}*/
 div.languages.languages-familiar {display: none;}
 div.languages.languages-interest {display: none;}
+div.platforms.cms-used {display: none;}
+div.platforms.cms-worked-with {display: none;}
+div.frameworks.frameworks-used {display: none;}
+div.frameworks.frameworks-familiar {display: none;}
+div.frameworks.frameworks-learn {display: none;}
 
-
-
-
-
-
-
+div.experience-sidebar {border-right: 1px #c3c3c3 solid}
 
