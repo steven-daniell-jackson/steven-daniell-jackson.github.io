@@ -43,4 +43,84 @@ END EVEMT LISTENER - ABOUT ME
 **************************************************************************/ 
 
 
+
+/**************************************************************************
+
+EVEMT LISTENER - SKILLS MATRIX
+
+**************************************************************************/ 
+
+
+$('li').on('click', function(event) {
+
+// Variable Declaration and assignment
+var parentElementID = $(this).parent().attr("id");
+	parentElementID = parentElementID.replace("#","");
+
+var elementDataValue = $(this).data("trigger");
+
+
+
+// Remove Active Class Function
+removeActiveClass()
+
+// Add Active Class to new Element
+$(this).addClass('active');
+
+// Pass Value to function
+experienceImageTransition(parentElementID, elementDataValue)
+
+
+});
+
+// Remove Active Class Function
+function removeActiveClass(){
+	
+	// Find and Remove previous Active class from elements
+$('.experience-sidebar').find('li.active').removeClass('active')
+$('.skills-image-block').find('div.active').removeClass('active').hide();
+}
+
+
+
+function experienceImageTransition(parentID, elementDataValue) {
+
+
+$('.'+ parentID + "-" + elementDataValue +'').fadeIn('300', function() {}).addClass('active');
+console.log(parentID + " "+ elementDataValue);
+
+
+
+// 	switch(parentElementID) {
+//     case "languages":
+//         console.log(parentElementID);
+//         break;
+//     case "cms":
+//         console.log(parentElementID);
+//         break;
+//         case "frameworks":
+//         console.log(parentElementID);
+//         break;
+//         case "tools":
+//         console.log(parentElementID);
+//         break;
+//     default:
+//        "Error! How did you even do this?"
+// }
+
+}
+
+
+
+
+
+/**************************************************************************
+
+END EVEMT LISTENER - SKILLS MATRIX
+
+**************************************************************************/ 
+
+
+
+
 }); //Document Ready
