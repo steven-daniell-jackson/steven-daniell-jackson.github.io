@@ -247,6 +247,7 @@
    div.frameworks.frameworks-used {display: none;}
    div.frameworks.frameworks-familiar {display: none;}
    div.frameworks.frameworks-learn {display: none;}
+   div.tools {display: none;}
    div.profile-link-information {opacity: 0;
    	-webkit-transition: all .25s ease-in;
    	-moz-transition: all .25s ease-in;
