@@ -157,7 +157,7 @@ console.log(findActive);
 if (findActive.length) {
 
 	
-resetEmployment() 
+resetEmployment(); 
 
 	$(this).css({
 	"margin-left": '12px',
@@ -168,7 +168,7 @@ resetEmployment()
 });
 	
 } else {
-	animateEmployment(this)
+	animateEmployment();
 console.log(1);
 	$(this).css({
 	"margin-left": '10px',
@@ -179,16 +179,10 @@ console.log(1);
 });
 }
 
-
-
-
-
-
-
 });
 
 
-
+// Animate Function
 function animateEmployment() {
 
 $('.currentJob').slideUp("slow");
@@ -196,9 +190,9 @@ $('#employmentContent').html('<span class="help">HELP!</span> <br><br>Click the 
 $('div.row.current').removeClass('text-center').removeClass('col-md-12').addClass('col-md-offset-1').addClass('col-md-6').addClass('active');
 $('div.row.history').fadeIn('slow', function() {});
 
-
 }
 
+// Reset Animation
 function resetEmployment() {
 
 $('.currentJob').slideDown("slow");
