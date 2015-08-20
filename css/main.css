@@ -1,260 +1,365 @@
-/* ==========================================================================
-   Steven Jackson custom styles
-   ========================================================================== */
+/**********************************************
 
-   /*Global CSS*/
-   @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+==========================================================================
+   Steven Jackson's custom styles
+========================================================================== 
 
-
-   body {background-color: #0d0d0d; padding:0px; font-family: 'Open Sans', sans-serif;}
-   a {
-   	cursor: pointer; 
-   	color: #CC2929;
-   	-webkit-transition: all .50s ease-in;
-   	-moz-transition: all .50s ease-in;
-   	-ms-transition: all .50s ease-in;
-   	-o-transition: all .50s ease-in;
-   	transition: all .50s ease-in;
-   }
-
-
-   a:hover {cursor: pointer; color: #FF3333;text-decoration: none;}
-
-
-   hr {max-width: 980px;background-color: #fff; margin:0px auto; padding: 0px;}
-   h1 {font-size: 50px; font-weight: bold; margin-bottom: 20px;}
-   h2 {font-style: italic;}
-   ul {list-style: none;padding: 0px; cursor: pointer; }
-   ul li {padding: 5px 0px;}
-
-   ul li:hover { 
-   	color: #FF3333;
-   	-webkit-transition: all .25s ease-in;
-   	-moz-transition: all .25s ease-in;
-   	-ms-transition: all .25s ease-in;
-   	-o-transition: all .25s ease-in;
-   	transition: all .25s ease-in;
-   }
-   /*Global CSS End */
-
-
-   /*Styles*/
-
-   .container {
-   	max-width: 980px;
-   	background-color: #fff;
-   	padding: 20px 30px;
-   }
-
-   .container header{
-   	max-width: 980px;
-   	background-color: #fff;
-   }
-
-   .panel {
-   	margin-bottom: 20px;
-   	background-color: #fff;
-   	border: 0px solid transparent; 
-   	border-radius: 4px;
-   	-webkit-box-shadow: 0 0px 0px rgba(0,0,0,.05); 
-   	box-shadow: 0 0px 0px rgba(0,0,0,.05); 
-   }
-
-   /*Header*/
-
-   div.main-header {font-size: 50px;}
-   div.main-header span.sub-header {font-size: 20px;font-style: italic;}
-   div.contact-details-top {}
-   /*Header End*/
-
-
-   /*Section - About Me*/
-
-
-   /*Sub Section - About me*/
-   section.container.about-me {background-color: #191919; color:#fff; }
-
-   div.container.arrow-about {padding: 10px 0px; border: 0px;}
-
-   .arrow {
-   	position: relative;
-   	top: 20px;
-   	left: 46%;
-   	background-color: transparent;
-   	margin-left: 0%;
-   	content: '';
-   	width: 0;
-   	height: 0;
-   	border-top: solid 30px #191919;
-   	border-left: solid 30px transparent;
-   	border-right: solid 30px transparent;
-   }
-
-   /*Sub Section - About me End*/
+**********************************************/
 
 
 
-   /*Sub Section - More about me*/
-   section.container.more-about-me {color:#fff; background: #292929;}
-   div.row.know-more {padding: 30px 20px;}
-   /*Sub Section - More about me end*/
+/**********************************************
 
-   div.row.know-less {padding: 30px 20px;}
+Global CSS
 
-   /*About me Triggers*/
-   a[data-about-me="more"] {
-   	-webkit-transition: all .50s ease-out;
-   	-moz-transition: all .50s ease-out;
-   	-ms-transition: all .50s ease-out;
-   	-o-transition: all .50s ease-out;
-   	transition: all .50s ease-out;
-   	padding: 10px 20px;
-   	border: 1px solid #fff;
-   	color: #fff;
-   }
-
-   a[data-about-me="less"] {
-   	padding: 10px 20px;
-   	border: 1px solid #fff;
-   	color: #fff;
-   }
-
-   /*Triggers End*/
-   /* End Section - About Me*/
+**********************************************/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
 
-   /* Section - Skills Matrix*/
-
-   div.experience-sidebar {border-right: 1px #c3c3c3 solid}
-   div.experience-sidebar h4 {margin: 15px 0px; font-weight: bold}
-   div.experience-sidebar ul > li:last-child{padding-bottom: 10px;}
-
-   /* End Section - Skills Matrix*/
-
-
-   /*Section - Profile Links*/
-   section.container.profile-links {background-color: #191919; color:#fff;}
-   section.container.profile-links h1{padding-bottom:20px;}
-   section.container.profile-links .panel{background-color: #191919; color:#fff; padding: 0px;}
-   section.container.profile-links .panel .panel-body{
-   	-webkit-transition: all .50s ease;
-   	-moz-transition: all .50s ease;
-   	-ms-transition: all .50s ease;
-   	-o-transition: all .50s ease;
-   	transition: all .50s ease;
-   	background-color: #191919; 
-   	opacity: 1;
-   	color:#fff; 
-   	border: 1px solid #fff; 
-   	margin: 0px 10px;
-   	cursor: pointer;
-   }
-
-   section.container.profile-links .panel .panel-body:hover{
-
-   	background-color: #fff; 
-   	color:#000; 
-
-   }
-
-   section.container.profile-links .panel .panel-body i{ font-size: 30px;}
-
-   /*End Section - Profile Links*/
+body {background-color: #0d0d0d; padding:0px; font-family: 'Open Sans', sans-serif;}
+a {
+ cursor: pointer; 
+ color: #CC2929;
+ -webkit-transition: all .50s ease-in;
+ -moz-transition: all .50s ease-in;
+ -ms-transition: all .50s ease-in;
+ -o-transition: all .50s ease-in;
+ transition: all .50s ease-in;
+}
 
 
-   /*Section - Employment History*/
-
-   a.employment-history-responsibilities {
-   	margin-top: 2%;
-   	-webkit-transition: all .50s ease-out;
-   	-moz-transition: all .50s ease-out;
-   	-ms-transition: all .50s ease-out;
-   	-o-transition: all .50s ease-out;
-   	transition: all .50s ease-out;
-   	padding: 10px 20px;
-   	border: 1px solid #000;
-   	color: #000;
-   }
-
-   div.container.arrow-employment-history {padding: 30px 0px; border: 0px;}
+a:hover {cursor: pointer; color: #FF3333;text-decoration: none;}
 
 
-   .arrow-employment {
-   	position: relative;
-   	top: 0px;
-   	left: 46%;
-   	display: inline-block;
-   	width: 4em;
-   	height: 4em;
-   	border: 0.5em solid #333;
-   	border-radius: 50%;
-   	margin-left: 0.75em;
-   	-webkit-transition: all 2s ease;
-   	-moz-transition: all 2s ease;
-   	-ms-transition: all 2s ease;
-   	-o-transition: all 2s ease;
-   	transition: all 2s ease;
-   }
+hr {max-width: 980px;background-color: #fff; margin:0px auto; padding: 0px;}
+h1 {font-size: 50px; font-weight: bold; margin-bottom: 20px;}
+h2 {font-style: italic;}
+ul {list-style: none;padding: 0px; cursor: pointer; }
+ul li {padding: 5px 0px;}
 
-   .arrow-employment:after {
-   	content: '';
-   	display: inline-block;
-   	margin-top: 0.6em;
-   	margin-left: 12px;
-   	width: 1.4em;
-   	height: 1.4em;
-   	border-top: 0.5em solid #333;
-   	border-right: 0.5em solid #333;
-   	-moz-transform: rotate(135deg);
-   	-webkit-transform: rotate(135deg);
-   	transform: rotate(135deg);
-   }
+ul li:hover { 
+ color: #FF3333;
+ -webkit-transition: all .25s ease-in;
+ -moz-transition: all .25s ease-in;
+ -ms-transition: all .25s ease-in;
+ -o-transition: all .25s ease-in;
+ transition: all .25s ease-in;
+}
+/**********************************************
+
+Global CSS End 
+
+**********************************************/
+
+/**********************************************
+
+Styles
+
+**********************************************/
+
+.container {
+ max-width: 980px;
+ background-color: #fff;
+ padding: 20px 30px;
+}
+
+.container header{
+ max-width: 980px;
+ background-color: #fff;
+}
+
+.panel {
+ margin-bottom: 20px;
+ background-color: #fff;
+ border: 0px solid transparent; 
+ border-radius: 4px;
+ -webkit-box-shadow: 0 0px 0px rgba(0,0,0,.05); 
+ box-shadow: 0 0px 0px rgba(0,0,0,.05); 
+}
+
+/**********************************************
+
+Header
+
+**********************************************/
+
+div.main-header {font-size: 50px;}
+div.main-header span.sub-header {font-size: 20px;font-style: italic;}
+div.contact-details-top {}
+/**********************************************
+
+Header End
+
+**********************************************/
+
+/**********************************************
+
+Section - About Me
+
+**********************************************/
+
+/**********************************************
+
+Sub Section - About me
+
+**********************************************/
+section.container.about-me {background-color: #191919; color:#fff; }
+
+div.container.arrow-about {padding: 10px 0px; border: 0px;}
+
+.arrow {
+ position: relative;
+ top: 20px;
+ left: 46%;
+ background-color: transparent;
+ margin-left: 0%;
+ content: '';
+ width: 0;
+ height: 0;
+ border-top: solid 30px #191919;
+ border-left: solid 30px transparent;
+ border-right: solid 30px transparent;
+}
+
+/**********************************************
+
+Sub Section - About me End
+
+**********************************************/
 
 
-   a.employment-history-responsibilities:hover{color: #fff;background-color: #000;}
-   span.help {font-size: 30px; color: #CC2929;}
+/**********************************************
 
-   /*End Section - Employment History*/
+Sub Section - More about me
 
-   /*Footer*/
+**********************************************/
+section.container.more-about-me {color:#fff; background: #292929;}
+div.row.know-more {padding: 30px 20px;}
+/**********************************************
 
-   footer.container {background-color: #191919; color:#fff;}
-   footer.container .row{padding: 40px 0;}
+Sub Section - More about me end
 
-   /*Footer End*/
+**********************************************/
+
+div.row.know-less {padding: 30px 20px;}
+
+/**********************************************
+
+About me Triggers
+
+**********************************************/
+a[data-about-me="more"] {
+ -webkit-transition: all .50s ease-out;
+ -moz-transition: all .50s ease-out;
+ -ms-transition: all .50s ease-out;
+ -o-transition: all .50s ease-out;
+ transition: all .50s ease-out;
+ padding: 10px 20px;
+ border: 1px solid #fff;
+ color: #fff;
+}
+
+a[data-about-me="less"] {
+ padding: 10px 20px;
+ border: 1px solid #fff;
+ color: #fff;
+}
+
+/**********************************************
+
+Triggers End
+
+**********************************************/
+/**********************************************
+
+ End Section - About Me
+
+ **********************************************/
+
+/**********************************************
+
+ Section - Skills Matrix
+
+ **********************************************/
+
+ div.experience-sidebar {border-right: 1px #c3c3c3 solid}
+ div.experience-sidebar h4 {margin: 15px 0px; font-weight: bold}
+ div.experience-sidebar ul > li:last-child{padding-bottom: 10px;}
+
+/**********************************************
+
+ End Section - Skills Matrix
+
+ **********************************************/
+
+/**********************************************
+
+Section - Profile Links
+
+**********************************************/
+section.container.profile-links {background-color: #191919; color:#fff;}
+section.container.profile-links h1{padding-bottom:20px;}
+section.container.profile-links .panel{background-color: #191919; color:#fff; padding: 0px;}
+section.container.profile-links .panel .panel-body{
+ -webkit-transition: all .50s ease;
+ -moz-transition: all .50s ease;
+ -ms-transition: all .50s ease;
+ -o-transition: all .50s ease;
+ transition: all .50s ease;
+ background-color: #191919; 
+ opacity: 1;
+ color:#fff; 
+ border: 1px solid #fff; 
+ margin: 0px 10px;
+ cursor: pointer;
+}
+
+section.container.profile-links .panel .panel-body:hover{
+
+ background-color: #fff; 
+ color:#000; 
+
+}
+
+section.container.profile-links .panel .panel-body i{ font-size: 30px;}
+
+/**********************************************
+
+End Section - Profile Links
+
+**********************************************/
+
+/**********************************************
+
+Section - Employment History
+
+**********************************************/
+
+a.employment-history-responsibilities {
+ margin-top: 2%;
+ -webkit-transition: all .50s ease-out;
+ -moz-transition: all .50s ease-out;
+ -ms-transition: all .50s ease-out;
+ -o-transition: all .50s ease-out;
+ transition: all .50s ease-out;
+ padding: 10px 20px;
+ border: 1px solid #000;
+ color: #000;
+}
+
+div.container.arrow-employment-history {padding: 30px 0px; border: 0px;}
+
+.arrow-employment {
+ position: relative;
+ top: 0px;
+ left: 46%;
+ display: inline-block;
+ width: 4em;
+ height: 4em;
+ border: 0.5em solid #333;
+ border-radius: 50%;
+ margin-left: 0.75em;
+ -webkit-transition: all 2s ease;
+ -moz-transition: all 2s ease;
+ -ms-transition: all 2s ease;
+ -o-transition: all 2s ease;
+ transition: all 2s ease;
+}
+
+.arrow-employment:after {
+ content: '';
+ display: inline-block;
+ margin-top: 0.6em;
+ margin-left: 12px;
+ width: 1.4em;
+ height: 1.4em;
+ border-top: 0.5em solid #333;
+ border-right: 0.5em solid #333;
+ -moz-transform: rotate(135deg);
+ -webkit-transform: rotate(135deg);
+ transform: rotate(135deg);
+}
 
 
-   /*Styles*/
+a.employment-history-responsibilities:hover{color: #fff;background-color: #000;}
+span.help {font-size: 30px; color: #CC2929;}
+
+/**********************************************
+
+End Section - Employment History
+
+**********************************************/
+
+/**********************************************
+
+Footer
+
+**********************************************/
+
+footer.container {background-color: #191919; color:#fff;}
+footer.container .row{padding: 40px 0;}
+
+/**********************************************
+
+Footer End
+
+**********************************************/
+
+/**********************************************
+
+Styles
+
+**********************************************/
 
 
-   /*Media Queries*/
 
-   @media (min-width: ) {
+ /**********************************************
 
-   }
+Interactive CSS
+
+**********************************************/
+section.more-about-me {display: none;}
+div.row.history {display: none;}
+div.languages.languages-familiar {display: none;}
+div.languages.languages-learn {display: none;}
+div.platforms.cms-used {display: none;}
+div.platforms.cms-familiar {display: none;}
+div.frameworks.frameworks-used {display: none;}
+div.frameworks.frameworks-familiar {display: none;}
+div.frameworks.frameworks-learn {display: none;}
+div.tools {display: none;}
+div.profile-link-information {opacity: 0;
+   -webkit-transition: all .25s ease-in;
+   -moz-transition: all .25s ease-in;
+   -ms-transition: all .25s ease-in;
+   -o-transition: all .25s ease-in;
+   transition: all .25s ease-in;
+}
+/**********************************************
+
+Interactive CSS End
+
+**********************************************/
 
 
-   /*Media Queries End*/
+
+/**********************************************
+
+Media Queries
+
+**********************************************/
+
+@media (min-width: ) {
+
+}
 
 
-   /*Interactive CSS*/
-   section.more-about-me {display: none;}
-   div.row.history {display: none;}
-   div.languages.languages-familiar {display: none;}
-   div.languages.languages-learn {display: none;}
-   div.platforms.cms-used {display: none;}
-   div.platforms.cms-familiar {display: none;}
-   div.frameworks.frameworks-used {display: none;}
-   div.frameworks.frameworks-familiar {display: none;}
-   div.frameworks.frameworks-learn {display: none;}
-   div.tools {display: none;}
-   div.profile-link-information {opacity: 0;
-   	-webkit-transition: all .25s ease-in;
-   	-moz-transition: all .25s ease-in;
-   	-ms-transition: all .25s ease-in;
-   	-o-transition: all .25s ease-in;
-   	transition: all .25s ease-in;
-   }
-   /*Interactive CSS End*/
+/**********************************************
+
+Media Queries End
+
+**********************************************/
+
+
 
 

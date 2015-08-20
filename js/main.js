@@ -1,8 +1,14 @@
+/**************************************************************************
+
+Custom JS by Steven Jackson
+
+**************************************************************************/ 
+
 $(function(){
 
 /**************************************************************************
 
-EVEMT LISTENER - ABOUT ME 
+EVENT LISTENER - ABOUT ME 
 
 **************************************************************************/ 
 
@@ -38,7 +44,7 @@ $('.more-about-me').slideUp('400', function() {
 
 /**************************************************************************
 
-END EVEMT LISTENER - ABOUT ME 
+END EVENT LISTENER - ABOUT ME 
 
 **************************************************************************/ 
 
@@ -46,7 +52,7 @@ END EVEMT LISTENER - ABOUT ME
 
 /**************************************************************************
 
-EVEMT LISTENER - SKILLS MATRIX
+EVENT LISTENER - SKILLS MATRIX
 
 **************************************************************************/ 
 
@@ -92,14 +98,14 @@ $('.'+ parentID + "-" + elementDataValue +'').fadeIn('300', function() {}).addCl
 
 /**************************************************************************
 
-END EVEMT LISTENER - SKILLS MATRIX
+END EVENT LISTENER - SKILLS MATRIX
 
 **************************************************************************/ 
 
 
 /**************************************************************************
 
-EVEMT LISTENER - PROFILE LINKS
+EVENT LISTENER - PROFILE LINKS
 
 **************************************************************************/ 
 
@@ -119,65 +125,65 @@ $('div.profile-link-information').css("opacity","1");
 
 
 switch(elementDataValue) {
-    case "porfolio":
-       $('div.profile-link-information').html(portfolioContent).fadeIn('slow', function() {});
-        break;
-   case "linkedin":
-       $('div.profile-link-information').html(linkedin).fadeIn('slow', function() {});
-        break;
-        case "google-docs":
-       $('div.profile-link-information').html(googleDocs + googleDocsLink).fadeIn('slow', function() {});
-        break;
-        case "github":
-       $('div.profile-link-information').html(github).fadeIn('slow', function() {});
-        break;
+	case "porfolio":
+	$('div.profile-link-information').html(portfolioContent).fadeIn('slow', function() {});
+	break;
+	case "linkedin":
+	$('div.profile-link-information').html(linkedin).fadeIn('slow', function() {});
+	break;
+	case "google-docs":
+	$('div.profile-link-information').html(googleDocs + googleDocsLink).fadeIn('slow', function() {});
+	break;
+	case "github":
+	$('div.profile-link-information').html(github).fadeIn('slow', function() {});
+	break;
 }
 
 });
 
 /**************************************************************************
 
-END EVEMT LISTENER - PROFILE LINKS
+END EVENT LISTENER - PROFILE LINKS
 
 **************************************************************************/ 
 
 
 /**************************************************************************
 
-EVEMT LISTENER - EMPLOYMENT ARROW
+EVENT LISTENER - EMPLOYMENT ARROW
 
 **************************************************************************/ 
 
 $('div.container.arrow-employment-history span').on('click', function(event) {
-var findActive = '';
-var findActive = $('.employment').find('.active');
-console.log(findActive);
+	var findActive = '';
+	var findActive = $('.employment').find('.active');
+	console.log(findActive);
 
 
-if (findActive.length) {
+	if (findActive.length) {
 
-	
-resetEmployment(); 
+		
+		resetEmployment(); 
 
-	$(this).css({
-	"margin-left": '12px',
-	"-moz-transform": 'rotate(360deg)',
-	"-webkit-transform": 'rotate(360deg)',
-	"transform": 'rotate(360deg)',
-	"left":"46%"
-});
-	
-} else {
-	animateEmployment();
-console.log(1);
-	$(this).css({
-	"margin-left": '10px',
-	"-moz-transform": 'rotate(-450deg)',
-	"-webkit-transform": 'rotate(-450deg)',
-	"transform": 'rotate(-450deg)',
-	"left":"18%"
-});
-}
+		$(this).css({
+			"margin-left": '12px',
+			"-moz-transform": 'rotate(360deg)',
+			"-webkit-transform": 'rotate(360deg)',
+			"transform": 'rotate(360deg)',
+			"left":"46%"
+		});
+		
+	} else {
+		animateEmployment();
+		console.log(1);
+		$(this).css({
+			"margin-left": '10px',
+			"-moz-transform": 'rotate(-450deg)',
+			"-webkit-transform": 'rotate(-450deg)',
+			"transform": 'rotate(-450deg)',
+			"left":"18%"
+		});
+	}
 
 });
 
@@ -185,27 +191,27 @@ console.log(1);
 // Animate Function
 function animateEmployment() {
 
-$('.currentJob').slideUp("slow");
-$('#employmentContent').html('<span class="help">HELP!</span> <br><br>Click the arrow again to return it to normal');
-$('div.row.current').removeClass('text-center').removeClass('col-md-12').addClass('col-md-offset-1').addClass('col-md-6').addClass('active');
-$('div.row.history').fadeIn('slow', function() {});
+	$('.currentJob').slideUp("slow");
+	$('#employmentContent').html('<span class="help">HELP!</span> <br><br>Click the arrow again to return it to normal');
+	$('div.row.current').removeClass('text-center').removeClass('col-md-12').addClass('col-md-offset-1').addClass('col-md-6').addClass('active');
+	$('div.row.history').fadeIn('slow', function() {});
 
 }
 
 // Reset Animation
 function resetEmployment() {
 
-$('.currentJob').slideDown("slow");
-$('#employmentContent').html('Click the arrow to find out!');
-$('div.row.current').addClass('text-center').addClass('col-md-12').removeClass('col-md-offset-1').removeClass('col-md-6').removeClass('active');
-$('div.row.history').hide();
+	$('.currentJob').slideDown("slow");
+	$('#employmentContent').html('Click the arrow to find out!');
+	$('div.row.current').addClass('text-center').addClass('col-md-12').removeClass('col-md-offset-1').removeClass('col-md-6').removeClass('active');
+	$('div.row.history').hide();
 
 }
 
 
 /**************************************************************************
 
-END EVEMT LISTENER - EMPLOYMENT ARROW
+END EVENT LISTENER - EMPLOYMENT ARROW
 
 **************************************************************************/ 
 
