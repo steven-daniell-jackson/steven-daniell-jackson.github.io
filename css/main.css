@@ -379,7 +379,10 @@ section.more-about-me.container{
 
 div.know-more{
     display: inline-block;
+}
 
+.img-responsive {
+	margin: 0 auto;
 }
 
 
