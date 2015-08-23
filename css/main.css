@@ -354,9 +354,7 @@ Media Queries
 .contact-details-top{
 	float: none !important;
 	    text-align: center;
-}
-
-@media (max-width: 891px ) {
+	}
 
 footer.container {
 	text-align: center;
