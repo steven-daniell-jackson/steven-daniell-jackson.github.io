@@ -119,7 +119,7 @@ var linkedin = 'My <a href="https://za.linkedin.com/pub/steven-jackson/b3/978/19
 var github = 'My <a href="https://github.com/steven-daniell-jackson/" target="_blank">Github</a> Profile';
 var googleDocs = 'Google Drive Document containing Work Done, Portfolio of Websites worked on, Skills Matrix and Responsibilies. <br>';
 var googleDocsLink = '<a href="https://docs.google.com/spreadsheets/d/1s7Or_0nZ1YYS3KibGAVgGdPnjmqB6iYWQPnXvEVpUmw/edit?usp=sharing" target="_blank">View Google Drive Document</a>'
-var portfolioContent = 'Due to the amount of Screenshots. <br> This has been moved<br> <a href="http://steven-daniell-jackson.github.io/screenshot_portfolio/">View Screenshot Portfolio</a>';
+var portfolioContent = 'Due to the amount of Screenshots. <br> This has been moved<br> <a href="http://steven-daniell-jackson.github.io/screenshot_portfolio/" target="_blank">View Screenshot Portfolio</a>';
 
 $('div.profile-link-information').css("opacity","1");
 
