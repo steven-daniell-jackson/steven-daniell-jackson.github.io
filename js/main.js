@@ -82,7 +82,7 @@ experienceImageTransition(parentElementID, elementDataValue)
 function removeActiveClass(){
 	
 // Find and Remove previous Active class from elements
-$('.experience-sidebar').find('li.active').removeClass('active')
+$('.experience-sidebar .experience-wrapper').find('li.active').removeClass('active')
 $('.skills-image-block').find('div.active').removeClass('active').hide();
 }
 

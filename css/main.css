@@ -135,6 +135,7 @@ Sub Section - More about me
 **********************************************/
 section.container.more-about-me {color:#fff; background: #292929;}
 div.row.know-more {padding: 30px 20px;}
+span.more-about-me-subheading {text-decoration: underline;}
 /**********************************************
 
 Sub Section - More about me end
@@ -349,7 +350,38 @@ Media Queries
 
 **********************************************/
 
-@media (min-width: ) {
+@media (max-width: 891px ) {
+.contact-details-top{
+	float: none !important;
+	    text-align: center;
+}
+
+@media (max-width: 891px ) {
+
+footer.container {
+	text-align: center;
+}
+
+section.employment.container{
+	text-align: center;
+}
+
+section.about-me.container{
+	text-align: center;
+	padding: 20px 70px;
+	
+}
+
+section.more-about-me.container{
+	text-align: center;
+	padding: 20px 70px;
+}
+
+div.know-more{
+    display: inline-block;
+
+}
+
 
 }
 
