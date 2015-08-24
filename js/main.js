@@ -52,7 +52,7 @@ END EVENT LISTENER - ABOUT ME
 
 /**************************************************************************
 
-EVENT LISTENER - SKILLS MATRIX
+EVENT LISTENER - SKILLS MATRIX - ACTIVE IMAGE LINK
 
 **************************************************************************/ 
 
@@ -93,12 +93,65 @@ function experienceImageTransition(parentID, elementDataValue) {
 // Element targeted based on the Trigger data- atrribute and Parent Elements ID
 $('.'+ parentID + "-" + elementDataValue +'').fadeIn('300', function() {}).addClass('active');
 
-
 }
 
 /**************************************************************************
 
-END EVENT LISTENER - SKILLS MATRIX
+END EVENT LISTENER - SKILLS MATRIX - ACTIVE IMAGE LINK
+
+**************************************************************************/ 
+
+/* 
+
+On Panel Hover animate the Skill level div
+Interation for Browsers
+
+*/
+
+$('.skills-image-block').on('mouseenter', '.panel', function(){
+
+$(this).find('.skill-level').animate({"opacity": "1", "top": "-15px"});
+
+});
+
+$('.skills-image-block').on('mouseleave', '.panel', function(){
+
+$(this).find('.skill-level').animate({"opacity": "0", "top": "0px"});
+
+});
+
+/* 
+
+On Panel Hover animate the Skill level div
+Interation for Mobile
+
+*/
+
+$('.skills-image-block').on('click', '.panel', function(){
+
+
+$('.skills-image-block').find('.skill-level.active').css({"opacity": "0", "top": "0px"}).removeClass('active');
+
+$(this).find('.skill-level').addClass('active').animate({"opacity": "1", "top": "-15px"});
+
+});
+
+
+
+
+
+/**************************************************************************
+
+EVENT LISTENER - SKILLS MATRIX - SKILL LEVEL
+
+**************************************************************************/ 
+
+
+
+
+/**************************************************************************
+
+END EVENT LISTENER - SKILLS MATRIX - SKILL LEVEL
 
 **************************************************************************/ 
 
