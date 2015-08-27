@@ -101,6 +101,14 @@ END EVENT LISTENER - SKILLS MATRIX - ACTIVE IMAGE LINK
 
 **************************************************************************/ 
 
+
+
+/**************************************************************************
+
+EVENT LISTENER - SKILLS MATRIX - SKILL LEVEL
+
+**************************************************************************/ 
+
 /* 
 
 On Panel Hover animate the Skill level div
@@ -135,17 +143,6 @@ $('.skills-image-block').find('.skill-level.active').css({"opacity": "0", "top":
 $(this).find('.skill-level').addClass('active').animate({"opacity": "1", "top": "-15px"});
 
 });
-
-
-
-
-
-/**************************************************************************
-
-EVENT LISTENER - SKILLS MATRIX - SKILL LEVEL
-
-**************************************************************************/ 
-
 
 
 
