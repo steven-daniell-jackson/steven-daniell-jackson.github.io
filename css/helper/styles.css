@@ -1,0 +1,557 @@
+/*!
+This is a generated stylesheet
+Written by Steven Jackson - 21 July 2016 
+
+IMPORTANT:
+DO NOT EDIT THE CSS DIRECTLY
+*/
+@import url(https://fonts.googleapis.com/css?family=Lato);
+/* ----------- Phones ----------- */
+/* ----------- iPhone 4 and 4S ----------- */
+/* ----------- iPhone 5 and 5S ----------- */
+/* ----------- iPhone 6 ----------- */
+/* ----------- iPhone 6+ ----------- */
+/* ----------- Galaxy S3 ----------- */
+/* ----------- Galaxy S4----------- */
+/* ----------- Galaxy S5----------- */
+/* ----------- Tablets ----------- */
+/* ----------- iPad mini, 1 and 2 ----------- */
+/* ----------- iPad 3 and 4 ----------- */
+h2 {
+  padding: 1% 0 3% 0;
+  margin: 0px;
+}
+
+h3 {
+  padding: 0px;
+}
+
+p {
+  border-top: 0px solid #eee;
+  padding: 20px 0;
+}
+
+a {
+  border-radius: 15px;
+  font-weight: 700;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+section:nth-child(odd) {
+  background: #2f2f2f;
+  color: #fff;
+}
+section:nth-child(odd) h1 {
+  color: #fff;
+}
+section:nth-child(odd) h2 {
+  color: #fff;
+}
+section:nth-child(odd) h3 {
+  color: #fff;
+}
+section:nth-child(odd) p {
+  color: #fff;
+}
+section:nth-child(odd) .panel-body {
+  color: #000000;
+}
+section:nth-child(odd) a {
+  background-color: #fff !important;
+  color: #000000 !important;
+}
+section:nth-child(odd) a:hover {
+  background-color: #222 !important;
+  color: #fff !important;
+}
+
+section {
+  padding: 30px 0;
+}
+section .tabs {
+  display: none;
+}
+section .tabs.active {
+  display: block;
+}
+
+footer {
+  color: #fff;
+  background: #2f2f2f;
+  padding: 20px 0;
+}
+
+header {
+  /* CUSTOMIZE THE NAVBAR
+  -------------------------------------------------- */
+  /* Special class on .container surrounding .navbar, used for positioning it into place. */
+  /* Flip around the padding for proper display in narrow viewports */
+}
+header .navbar-default {
+  background-color: #222;
+  border-color: #e7e7e7;
+}
+header .navbar-nav > li > .dropdown-menu {
+  margin-top: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  background-color: #222;
+}
+header .navbar-inverse {
+  border: 0px;
+  margin: 0px;
+  padding: 10px 0px 0px;
+}
+header .navbar-right {
+  margin-right: 20px;
+}
+header .navbar-nav > li + li:after {
+  content: "";
+  background: #ccc;
+  position: absolute;
+  bottom: 25%;
+  left: 0;
+  height: 50%;
+  width: 1px;
+}
+header .navbar-nav > li.active > a {
+  border-bottom: 2px solid #fff;
+  border-radius: 0px !important;
+  padding: 10px 3px !important;
+  margin: 0 20px;
+  width: 50%;
+  background-color: #222 !important;
+}
+header .navbar-inverse .navbar-nav > li > a {
+  background-color: #222 !important;
+}
+header .navbar-inverse .navbar-brand {
+  background-color: #222 !important;
+}
+header .navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+  background-color: #222;
+}
+header .navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+header .navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+header .navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+.hide-bullets {
+  list-style: none;
+  margin-left: -40px;
+  margin-top: 20px;
+}
+
+/* Carousel base class */
+.carousel {
+  height: auto;
+}
+
+#bannerCarousel.carousel {
+  height: 500px;
+}
+#bannerCarousel.carousel .item {
+  height: 500px;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+  color: #fff;
+}
+.carousel-caption, .carousel-caption h1 {
+  color: #fff;
+  font-size: 2em;
+  text-shadow: 1px 1px solid #000;
+}
+.carousel-caption, .carousel-caption p {
+  color: #fff;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 350px;
+}
+
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: auto;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.marketing h2 {
+  font-weight: normal;
+}
+
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* Featurettes
+------------------------- */
+.featurette-divider {
+  margin: 80px 0;
+  /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+.carousel-inner {
+  box-shadow: 1px 0px 20px #000 !important;
+  background-color: #fff;
+}
+
+#slider-thumbs a.thumbnail {
+  background-color: #fff !important;
+}
+
+#slider-thumbs a.thumbnail :hover {
+  background-color: transparent !important;
+}
+
+#slider-thumbs li :hover {
+  background-color: #c3c3c3 !important;
+}
+
+#slider-thumbs li a {
+  background-color: #fff !important;
+}
+
+#portfolio .thumbnail {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ededed+45,ffffff+100&0.74+0,1+100 */
+  background: -moz-linear-gradient(-45deg, rgba(237, 237, 237, 0.74) 0%, rgba(237, 237, 237, 0.86) 45%, white 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, rgba(237, 237, 237, 0.74) 0%, rgba(237, 237, 237, 0.86) 45%, white 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, rgba(237, 237, 237, 0.74) 0%, rgba(237, 237, 237, 0.86) 45%, white 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bdededed', endColorstr='#ffffff',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+}
+#portfolio .thumbnail img {
+  max-height: 200px;
+  box-shadow: 5px 5px 5px #888888;
+}
+
+.caption h4 {
+  text-align: center;
+  font-size: 1.4em;
+  color: #000000 !important;
+}
+.caption p {
+  padding: 10px 15px;
+  font-size: 1em;
+  color: #000000 !important;
+  text-justify: auto;
+  text-align: center;
+}
+
+#portfolio h4 {
+  color: #fff;
+}
+
+.carousel-control {
+  border-radius: 0px;
+}
+
+body#about-me-page header .navbar-nav > li.active > a {
+  border-bottom: 2px solid #fff;
+  border-radius: 0 !important;
+  padding: 10px 3px !important;
+  margin: 0 20px;
+  width: 55% !important;
+}
+
+section#about-me-summary .wrapper {
+  padding-top: 4%;
+}
+section#about-me-summary div .list-group {
+  padding: 20px 0px;
+}
+section#about-me-summary div .list-group .list-group-item-heading {
+  font-size: 1.2em;
+}
+section#about-me-summary div .list-group .list-group-item-text {
+  padding: 10px 0 20px 0;
+  color: #2f2f2f;
+  font-weight: 700;
+}
+section#about-me-content p.tabs {
+  padding: 0px;
+}
+section#about-me-content .panel-body {
+  font-weight: 700;
+  text-align: center;
+}
+section#youtubeChannels h3 {
+  font-size: 1.6em;
+  padding: 20px 0;
+}
+section.profile-links a {
+  padding: 0 !important;
+  background-color: transparent !important;
+  color: red !important;
+}
+section.profile-links .fa {
+  font-size: 2em;
+}
+
+body#coding-experience-page header .navbar-nav > li.active > a {
+  border-bottom: 2px solid #fff;
+  border-radius: 0 !important;
+  padding: 10px 3px !important;
+  margin: 0 20px;
+  width: 78% !important;
+}
+
+.progress {
+  border-radius: 20px;
+  height: 25px;
+}
+
+.skill-name {
+  text-transform: uppercase;
+  margin-left: 10px;
+  padding-left: 10px;
+  padding-top: 2.5px;
+  float: left;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1em;
+}
+
+.progress .progress-bar, .progress .progress-bar.progress-bar-default {
+  background-color: #46a546;
+}
+
+.progress .progress-bar {
+  animation-name: animateBar;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1.0s;
+}
+
+@keyframes animateBar {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/*media Queries*/
+@media (min-width: 768px) and (max-width: 991px) {
+  #about-section h1 {
+    font-size: 2.0em;
+  }
+
+  .nav-pills li a {
+    font-size: 1.3em !important;
+  }
+}
+@media (max-width: 767px) {
+  #about-section h1 {
+    margin-top: 90px !important;
+    font-size: 1.5em;
+  }
+
+  .nav-pills li a {
+    font-size: 1.3em !important;
+  }
+
+  .about-me-text {
+    font-size: 1.0em;
+  }
+
+  .btn-tab .btn-overide {
+    font-size: 0.8em;
+    width: 200px;
+  }
+
+  #about-section {
+    height: 750px;
+  }
+
+  #about-section h1 {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 456px) {
+  #about-section {
+    height: 730px;
+  }
+
+  .nav-pills li a {
+    font-size: 0.9em !important;
+  }
+}
+@media (max-width: 648px) {
+  #about-section {
+    height: 800px;
+  }
+}
+@media (min-width: 481px) and (max-width: 553px) {
+  #about-section {
+    height: 900px;
+  }
+}
+@media (max-width: 479px) {
+  .btn-hire {
+    margin-top: 20px !important;
+  }
+
+  .btn-contact {
+    margin-top: 10px !important;
+  }
+
+  #about-section {
+    height: 950px;
+  }
+}
+@media (max-width: 442px) {
+  #about-section {
+    height: 980px;
+  }
+}
+@media (max-width: 411px) {
+  #about-section {
+    height: 1020px;
+  }
+}
+@media (max-width: 373px) {
+  #about-section {
+    height: 1050px;
+  }
+}
+body#contact-me-page header .navbar-nav > li.active > a {
+  border-bottom: 2px solid #fff;
+  border-radius: 0 !important;
+  padding: 10px 3px !important;
+  margin: 0 20px;
+  width: 57% !important;
+}
+
+body {
+  font: "Lato", sans-serif;
+  font-size: 1.2em;
+  color: #616161;
+}
+
+h1 {
+  color: #1c1c1c;
+  font-size: 2em;
+}
+
+h2 {
+  color: #1c1c1c;
+  font-size: 3em;
+}
+
+h3 {
+  color: #1c1c1c;
+  font-size: 2.5em;
+}
+
+h4 {
+  color: #1c1c1c;
+  font-size: 1em;
+}
+
+h5 {
+  color: #1c1c1c;
+  font-size: 0.83em;
+}
+
+h6 {
+  color: #1c1c1c;
+  font-size: 0.7em;
+}
+
+p {
+  color: #1c1c1c;
+  font-size: 1.1em;
+}
+
+a {
+  padding: 10px 20px !important;
+  background-color: #222 !important;
+  color: #fff !important;
+  -webkit-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+}
+a:hover {
+  padding: #000 !important;
+  background-color: #222 !important;
+  color: #fff !important;
+  -webkit-transition: all linear 0.6s;
+  -o-transition: all linear 0.6s;
+  transition: all linear 0.6s;
+}

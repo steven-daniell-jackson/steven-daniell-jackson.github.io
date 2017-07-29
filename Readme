@@ -1,0 +1,133 @@
+Written by Steven Jackson - 21 July 2016
+
+**********************************************************************************************************************************************
+
+Description: 
+Basic template for building landing pages efficiently using SCSS and Gulp.
+
+**********************************************************************************************************************************************
+
+Installation:
+
+"$ npm install" the root directory
+"gulp" the directory for node express server 
+Navigate to "http://localhost:3000/" and Happy coding
+
+**********************************************************************************************************************************************
+
+Default Environment:
+
+-- source
+	-- css
+	-- img
+	-- js
+	-- sass
+	- index.html
+
+**********************************************************************************************************************************************
+
+Build Distribution:
+
+-- Usage --
+
+Run "gulp dist" in your CLI
+
+-- Build sequence --
+
+clean - Clear directory
+concat-css - Combine and minify CSS
+min-html - Minify HTML
+replace - Replace "/source/" with "./"
+copy - Copy files to "dist" directory
+
+
+Distribution Structure:
+
+-- dist
+	-- css
+		- bootstrap.min.css
+		- bundle.min.css
+		- styles.css
+		- styles.min.css
+	-- js
+		- bootstrap.js
+		- bootstrap.min.js
+		- jquery-1.11.2.min.js
+		- modernizr-2.8.3-respond-1.4.2.min.js
+	- .gitignore
+	- .htaccess
+	- Gulpfile.js
+	- *.html
+	- package.json
+	- Readme
+
+
+**********************************************************************************************************************************************
+
+Build Production:
+
+-- Usage --
+
+Run "gulp prod" in your CLI
+
+-- Build sequence --
+
+prod-clean - Clear directory
+prod-concat-css - Combine CSS
+prod-replace - Replace "/source/" with "./"
+prod-copy - Copy files to "prod" directory
+
+
+Production Structure:
+
+-- prod
+	-- css
+		- bootstrap.min.css
+		- bundle.min.css
+		- styles.css
+		- styles.min.css
+	-- js
+		- bootstrap.js
+		- bootstrap.min.js
+		- jquery-1.11.2.min.js
+		- modernizr-2.8.3-respond-1.4.2.min.js
+	- .gitignore
+	- .htaccess
+	- Gulpfile.js
+	- *.html
+	- package.json
+	- Readme
+
+
+**********************************************************************************************************************************************
+
+Build Tinypng: 
+
+-- Usage --
+Run "gulp tinypng" in your CLI
+
+Description: Compresses images within the "source" directory using Tinypng API and copies it to "/dist/img/" and retains structure 
+
+-- dist
+	-- img
+	-- retain-folder-structure
+		- example-img.png
+	- example-img.png
+	
+**********************************************************************************************************************************************
+
+IMPORTANT NOTE:
+REMOVE: "<link rel="stylesheet" href="css/styles.min.css">" from "/dist/index.html"
+
+**********************************************************************************************************************************************
+
+DEBUG TOOLS:
+"/source/css/styles.css" is used for debugging the processed scss file located in "sass/styles.scss"
+
+**********************************************************************************************************************************************
+
+Note: 
+Replacing "/source/css/bootstrap.min.css" with the Development/Custom version of bootstrap can be done.
+Just run "gulp dist" for the changes to take effect
+
+**********************************************************************************************************************************************
